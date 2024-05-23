@@ -17,12 +17,12 @@
 
             header("location:../users_pages/home.php");
         }else{
-            echo("E-mail ou senha inválidos!");
+            echo("<script>alert('E-mail ou senha inválidos!')</script>");
         }
     }else{
-        echo("E-mail ou senha inválidos!");
+        echo("<script>alert('E-mail ou senha inválidos!')</script>");
     }
-
+    
     unset($sql);
     unset($conn);
 ?>

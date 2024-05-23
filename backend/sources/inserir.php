@@ -14,7 +14,7 @@
 
         header("location:../users_pages/cadastro.php");
     }else{
-        echo("<H1>O e-mail informado já está cadastrado!</H1>");
+        echo("<script>alert('O e-mail informado já está cadastrado!')</script>");
     }
 
     unset($sqlVerification);
