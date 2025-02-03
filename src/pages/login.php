@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/style/styles.css">
+    <link rel="stylesheet" href="../../static/style/styles.css">
 </head>
 
 <body class="d-flex justify-content-center align-items-center">
     <main class="col-6">
         <div class="row p-5 border rounded-2 blur">
-            <h1 class="mb-4 d-flex justify-content-center">Logar-se</h1>
+            <h1 class="mb-4 d-flex justify-content-center">Login</h1>
 
-            <form method="POST" action="../sources/logar.php">
+            <form method="POST" action="../sources/user/login.php">
                 <section>
-                    <label class="mb-1">E-mail:</label>
+                    <label class="mb-1">Email:</label>
                     <input type="text" name="email" class="form-control mb-3">
                 </section>
 
                 <section>
-                    <label class="mb-1">Senha:</label>
-                    <input type="password" name="senha" class="form-control mb-3">
+                    <label class="mb-1">Password:</label>
+                    <input type="password" name="password" class="form-control mb-3">
                 </section>
 
                 <section>
@@ -31,7 +31,7 @@
             </form>
 
             <section>
-                <a href="cadastro.php">Cadastre-se</a>
+                <a href="register.php">Register</a>
             </section>
         </div>
     </main>
