@@ -1,5 +1,5 @@
 <?php
-    include_once('../sources/listar1.php');
+    include_once('../sources/user/listOne.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
 
                 <section>
                     <label class="mb-1">Password:</label>
-                    <input type="password" name="password" class="form-control mb-3" value="<?php echo $user['user_password'];?>">
+                    <input type="password" name="password" class="form-control mb-3" value="<?php echo $user['password_user'];?>">
                 </section>
 
                 <section>

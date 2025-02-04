@@ -1,5 +1,5 @@
 <?php
-    include_once("../global/connection.php");
+    include_once("../sources/global/connection.php");
 
     $pk_user = $_GET["user"];
     

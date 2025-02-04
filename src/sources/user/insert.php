@@ -2,7 +2,7 @@
     include_once("../global/connection.php");
 
     $email = $_POST["email"];
-    $password = MD5($_POST["password_user"]);
+    $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
 
     $sqlVerification = $conn -> prepare("SELECT pk_user, user_email, password_user, is_admin FROM user WHERE user_email = ?");
 
@@ -12,7 +12,7 @@
         $sql = $conn -> prepare("INSERT INTO user (user_email, password_user) VALUES (?,?)");
         $sql -> execute([$email, $password]);
 
-        header("location:../pages/cadastro.php");
+        header("location:../../pages/register.php");
     }else{
         echo("<script>alert('The email provided is already registered!')</script>");
     }

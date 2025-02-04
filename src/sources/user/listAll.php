@@ -1,5 +1,5 @@
 <?php
-    include_once("../global/connection.php");
+    include_once("../sources/global/connection.php");
     
     $sql = $conn -> prepare("SELECT pk_user, user_email, is_admin FROM user;");
 

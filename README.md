@@ -20,4 +20,38 @@ O objetivo principal do projeto é implementar uma interface web simples que per
 
 ## ⚙️ Como Rodar o Projeto
 
-1. ...
+Antes de iniciar a instalação, certifique-se de ter os seguintes programas instalados:
+
+- **Git:** Versionamento e hospedagem de código;
+- **XAMPP:** Pacote de software que inclui o Apache, MySQL e PHP;
+- **MySQL:** Banco de dados relacional.
+
+Com os programas necessários instalados, é possível realizar a execução dos passos a seguir.
+
+### 1. Configurar o Banco de Dados
+
+- Abra o `CMD` e execute o seguinte comando para habilitar o MySQL:
+
+        mysql -u <seu-nome-de-usuário> -p
+
+- Logo após, execute os comandos presentes no arquivo **databases.db**, localizado na pasta `databases`.
+
+- Por fim, utilize o seguinte comando para fechar o MySQL:
+
+        exit
+
+### 2. Configuração do Projeto
+
+- Abra o XAMPP e abra as portas do Apache e MySQL.
+
+> ⚠️ **Observação:** caso a porta do MySQL não esteja abrindo, execute o seguinte comando no terminal e abra a porta pelo XAMPP novamente: `net stop mysql80`.
+
+- Clone o projeto dentro da pasta `htdocs` do XAMPP com o seguinte comando:
+
+        git clonehttps://github.com/ruansilva123/DESO_PHP-AULA-SENAI.git
+
+### 3. Pesquisa do Link do projeto
+
+- No seu navegador, acesse a seguinte URL:
+
+        http://localhost/DESO_PHP-AULA-SENAI/src/pages/login.php

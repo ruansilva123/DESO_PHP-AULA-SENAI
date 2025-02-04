@@ -10,13 +10,14 @@
 
     if($sql -> rowCount() == 1){
         $user = $sql -> fetch();
-        if($user['password_user'] == MD5($password)){
+        if(password_verify($password, $user['password_user'])){
             session_start();
             $_SESSION["is_admin"] = $user["is_admin"];
             $_SESSION["loggedin"] = true;
 
-            header("location:../pages/home.php");
+            header("location:../../pages/home.php");
         }else{
+            
             echo("<script>alert('Invalid email or password!')</script>");
         }
     }else{

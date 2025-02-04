@@ -39,9 +39,9 @@
                 echo ' <tr>
                         <td>' . $newUser["pk_user"] . '</td>
                         <td>' . $newUser["user_email"] . '</td>
-                        <td>' . $newUser["password_user"] . '</td>
-                        <td><a href="../sources/user/exclude.php?user='.$user["pk_user"].'">Exclude</a></td>  
-                        <td><a href="edit.php?user='.$user["pk_user"].'">Edit</a></td>  
+                        <td>' . $newUser["is_admin"] . '</td>
+                        <td><a href="../sources/user/exclude.php?user='.$newUser["pk_user"].'">Exclude</a></td>  
+                        <td><a href="edit.php?user='.$newUser["pk_user"].'">Edit</a></td>  
                     </tr>';
             }
             }

@@ -9,5 +9,5 @@
     unset($sql);
     unset($conn);
 
-    header("location: ../pages/home.php");
+    header("location: ../../pages/home.php");
 ?>
