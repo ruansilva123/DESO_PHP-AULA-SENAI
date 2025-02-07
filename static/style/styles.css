@@ -8,5 +8,11 @@ body{
 }
 
 .blur{
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+}
+
+.navbar-blur{
+    background-color: white;
+    opacity: 40%;
 }
